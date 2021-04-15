@@ -1,0 +1,24 @@
+<div class="container">
+   <h3 class="text-center">Login Here</h3>
+    {{#each msg}}
+  <div class="alert alert-danger">{{error_msg}}</div>
+  {{/each}}
+
+     <form method="POST" action="/user/login">
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" name="email" >
+
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" name="password" >
+
+      </div>
+      <div class="form-group text-center">
+      <input type="submit" class="btn btn-primary mt-4 text-center" value="submit">
+      </div>
+   </form>
+  
+</div>

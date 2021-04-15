@@ -1,0 +1,23 @@
+
+<div class="container">
+  <h5 class="text-center">UserName:{{name}}</h5>
+  <h5 class="text-center">Email:{{email}}</h5>
+  {{#each result}}
+  <h5>Title:{{titles}}</h5>
+  <h6>Written by {{author}}</h6>
+  <h5>Image Here</h5>
+  {{image}}
+  <img src="./uploads/{{image}}" alt="" style="border:2px solid green;" height="100px" width="100px">
+  <hr>
+  <h4>Content</h4>
+  <p>{{body}}</p>
+  
+    <a href="/delete/{{_id}}" class="btn btn-danger" >Delete</a>
+    <a class="btn btn-primary" href="/update/{{_id}}">Edit</a>
+
+  
+  <hr>
+  
+     
+{{/each}}
+</div>

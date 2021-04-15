@@ -1,0 +1,28 @@
+<h1>Update articles</h1>
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <form method="POST" action="/updated-data/{{_id}}">
+
+      <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" name="titles" value="{{titles}}">
+
+      </div>
+      <div class="form-group">
+        <label>Author</label>
+        <input type="text" class="form-control" name="author" value="{{author}}">
+
+      </div>
+      <div class="form-group">
+        <label>Body</label>
+        <textarea class="form-control" name="body" rows="5">{{body}}</textarea> 
+
+      </div>
+      <div class="form-group text-center">
+      <input type="submit" class="btn btn-primary mt-4 text-center" value="update">
+      </div>
+    </form>
+
+  </div>
+
+</div>
